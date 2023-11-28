@@ -2,32 +2,31 @@ import CompaniesDropdown from "@/components/CompaniesDropdown";
 import { authOptions } from "@/lib/auth";
 import { Button, Divider, Select, SelectItem } from "@nextui-org/react";
 import Image from "next/image";
-
+import Link from "next/link";
 export default async function Home() {
   return (
     <>
       <section className="relative flex flex-col items-center">
-        <div className="bg-primary absolute inset-0 z-0">
-          <Image
+        <div className="bg-secondary absolute inset-0 z-0">
+          {/* <Image
             className="opacity-20 md:opacity-100"
             src="/bg.jpg"
             alt="Background Image"
             layout="fill"
             priority
-          />
+          /> */}
         </div>
 
         <div className="container mx-8 sm:mx-4 md:mx-80 my-8 md:my-24 text-center md:text-left h-80 flex flex-col justify-center">
-          <div className="relative text-white">
-            <h1 className="text-3xl md:text-5xl font-bold">
-              Unlock Transparency
+          <div className="relative text-white sm:space-y-3">
+            <h1 className="text-5xl md:text-5xl font-bold sm:leading-relaxed">
+              Web And Mobile <br /> Development Solution
             </h1>
             <p className="text-base md:text-lg">
-              Share your voice, shape the future
+              Turning Imaginations to powerful solutions
             </p>
           </div>
           <Divider className="my-2 md:my-4" />
-          <CompaniesDropdown />
         </div>
         {/* Content */}
       </section>
@@ -38,8 +37,8 @@ export default async function Home() {
             <div className="md:col-span-1 p-4 rounded-md">
               <h3 className="text-xl font-bold mb-2">About Us</h3>
               <p className="text-gray-700">
-                Welcome to Infintrix Technologies, where innovation
-                meets excellence in the world of web and mobile development.
+                Welcome to Infintrix Technologies, where innovation meets
+                excellence in the world of web and mobile development.
                 Established with a passion for crafting digital solutions that
                 transcend expectations, we take pride in being your trusted
                 partner on the journey to digital success. Who We Are: At
@@ -61,7 +60,13 @@ export default async function Home() {
                 consequuntur voluptatum laborum numquam blanditiis harum
                 quisquam eius sed odit fugiat iusto fuga praesentium optio
               </p>
-              <Button variant="bordered" radius="full" className="my-2">
+              <Button
+                as={Link}
+                href="/about"
+                variant="bordered"
+                radius="full"
+                className="my-2"
+              >
                 Read More
               </Button>
             </div>
