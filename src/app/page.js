@@ -38,10 +38,22 @@ export default async function Home() {
             <div className="md:col-span-1 p-4 rounded-md">
               <h3 className="text-xl font-bold mb-2">About Us</h3>
               <p className="text-gray-700">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                mollitia, molestiae quas vel sint commodi repudiandae
-                consequuntur voluptatum laborum numquam blanditiis harum
-                quisquam eius sed odit fugiat iusto fuga praesentium optio
+                Welcome to Infintrix Technologies, where innovation
+                meets excellence in the world of web and mobile development.
+                Established with a passion for crafting digital solutions that
+                transcend expectations, we take pride in being your trusted
+                partner on the journey to digital success. Who We Are: At
+                Infintrix Technologies, we are a dynamic team of creative minds,
+                tech enthusiasts, and problem solvers. Our company was founded
+                with the vision of delivering cutting-edge web and mobile
+                development services that empower businesses and individuals to
+                thrive in the digital landscape. Our Mission: Our mission is to
+                be at the forefront of technological advancements, providing our
+                clients with bespoke solutions that not only meet their current
+                needs but also anticipate and adapt to future challenges. We
+                strive to build lasting relationships by delivering
+                high-quality, scalable, and innovative solutions tailored to
+                each client&apos;s unique requirements.
               </p>
               <p className="text-gray-700">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
