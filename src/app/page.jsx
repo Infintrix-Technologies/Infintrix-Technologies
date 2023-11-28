@@ -54,12 +54,7 @@ export default async function Home() {
                 high-quality, scalable, and innovative solutions tailored to
                 each client&apos;s unique requirements.
               </p>
-              <p className="text-gray-700">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                mollitia, molestiae quas vel sint commodi repudiandae
-                consequuntur voluptatum laborum numquam blanditiis harum
-                quisquam eius sed odit fugiat iusto fuga praesentium optio
-              </p>
+
               <Button
                 as={Link}
                 href="/about"
