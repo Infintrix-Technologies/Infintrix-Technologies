@@ -8,16 +8,10 @@ import {
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
-  Image,
-  Spinner,
+  Image
 } from "@nextui-org/react";
 import Link from "next/link";
-import ProfileInfo from "./ProfileInfo";
-import { staffNavbar, websiteNavbar } from "@/lib/nav";
-import { usePathname } from "next/navigation";
-import { getServerSession } from "next-auth";
-import { authOptions } from "@/lib/auth";
-
+import {  websiteNavbar } from "@/lib/nav";
 export default async function WebsiteNavbar() {
   let menuItems;
   const session = undefined;

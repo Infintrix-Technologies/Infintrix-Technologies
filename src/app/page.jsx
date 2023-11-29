@@ -1,35 +1,13 @@
-import CompaniesDropdown from "@/components/CompaniesDropdown";
-import { authOptions } from "@/lib/auth";
-import { Button, Divider, Select, SelectItem } from "@nextui-org/react";
+
+import HomepageHero from "@/components/HomepageHero";
+// import { authOptions } from "@/lib/auth";
+import { Button } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
 export default async function Home() {
   return (
     <>
-      <section className="relative flex flex-col items-center">
-        <div className="bg-secondary absolute inset-0 z-0">
-          {/* <Image
-            className="opacity-20 md:opacity-100"
-            src="/bg.jpg"
-            alt="Background Image"
-            layout="fill"
-            priority
-          /> */}
-        </div>
-
-        <div className="container mx-8 sm:mx-4 md:mx-80 my-8 md:my-24 text-center md:text-left h-80 flex flex-col justify-center">
-          <div className="relative text-white sm:space-y-3">
-            <h1 className="text-5xl md:text-5xl font-bold sm:leading-relaxed">
-              Web And Mobile <br /> Development Solution
-            </h1>
-            <p className="text-base md:text-lg">
-              Turning Imaginations to powerful solutions
-            </p>
-          </div>
-          <Divider className="my-2 md:my-4" />
-        </div>
-        {/* Content */}
-      </section>
+      <HomepageHero />
       <section className="about">
         <div className="container mx-auto my-8 p-8 bg-white shadow-md">
           {/* <h2 className="text-2xl font-semibold mb-4">Meet the Team</h2> */}
