@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import {
   Navbar,
@@ -8,16 +10,11 @@ import {
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
-  Image
+  Image,
 } from "@nextui-org/react";
 import Link from "next/link";
-import {  websiteNavbar } from "@/lib/nav";
-export default async function WebsiteNavbar() {
-  let menuItems;
-  const session = undefined;
-
-  menuItems = websiteNavbar;
-
+import { websiteNavbar } from "@/lib/nav";
+export default function WebsiteNavbar() {
   return (
     <>
       <Navbar>
@@ -31,7 +28,7 @@ export default async function WebsiteNavbar() {
         </NavbarContent>
 
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
-          {menuItems.map((item, index) => (
+          {websiteNavbar.map((item, index) => (
             <NavbarItem key={`${item.name}-${index}`}>
               <Button
                 className=" rounded-lg"
@@ -60,7 +57,7 @@ export default async function WebsiteNavbar() {
         </NavbarContent>
 
         <NavbarMenu>
-          {menuItems.map((item, index) => (
+          {websiteNavbar.map((item, index) => (
             <NavbarMenuItem key={`${item.name}-${index}`}>
               <Link className="w-full" href={item.link} size="lg">
                 {item.name}

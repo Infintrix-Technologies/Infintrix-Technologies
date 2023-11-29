@@ -5,6 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
 import MainFooter from "@/components/MainFooter";
+import MainNavBar from "@/components/MainNavBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,22 +17,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <meta name="robots" content="noindex, nofollow" />
-      </head>
       <body
         className={`${inter.className} min-h-screen flex flex-col h-screen`}
         suppressHydrationWarning={true}
       >
-        {/* <AuthProvider> */}
-        {/* <ThemeProvider> */}
-
         <WebsiteNavbar />
-        <div className="flex-1">{children}</div>
+
+        <div className="container mx-auto flex-1">{children}</div>
         <ToastContainer />
         <MainFooter />
-        {/* </ThemeProvider> */}
-        {/* </AuthProvider> */}
       </body>
     </html>
   );

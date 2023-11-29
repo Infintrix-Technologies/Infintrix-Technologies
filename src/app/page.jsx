@@ -1,4 +1,3 @@
-
 import HomepageHero from "@/components/HomepageHero";
 // import { authOptions } from "@/lib/auth";
 import { Button } from "@nextui-org/react";
