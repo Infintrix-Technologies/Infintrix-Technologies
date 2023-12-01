@@ -45,13 +45,13 @@ export default function WebsiteNavbar() {
         <NavbarContent justify="end">
           <NavbarItem className="text-white">
             <Button
-              className="rounded-full"
+              className="rounded-full uppercase"
               as={Link}
               color="secondary"
-              href="/estimate"
+              href="/contact"
               // variant="flat"
             >
-              Estimate Project
+              Qet Quote
             </Button>
           </NavbarItem>
         </NavbarContent>

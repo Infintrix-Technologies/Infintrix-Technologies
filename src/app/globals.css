@@ -2,3 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
+.dynamic-content h1 {
+    font-size: 3rem;
+    color: #333;
+    font-weight: 600;
+    margin: 20px 0 20px 0px
+}
+
+.dynamic-content h2 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 600;
+    margin: 20px 0 20px 0px
+}
+
+.dynamic-content h3 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.dynamic-content h4 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.dynamic-content h5 {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.dynamic-content h6 {
+    font-size: 0.75rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.dynamic-content p {
+    line-height: 1.75rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.dynamic-content ul li {
+    /* Your styles for li elements here */
+    /* If you want to turn on bullets, use list-style-type: disc; */
+    list-style-type: disc;
+    margin-left: 2.5rem;
+}

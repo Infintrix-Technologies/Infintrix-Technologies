@@ -8,8 +8,13 @@ import {
   MdSmartphone,
 } from "react-icons/md";
 import { GiArtificialIntelligence } from "react-icons/gi";
+import { pb } from "@/lib/pb_conn";
 
 const ServicesPage = async () => {
+  // const records = await pb.collection("services").getFullList({
+  //   sort: "-created",
+  // });
+  // console.log(records)
   const servicesList = [
     {
       name: "Web Application Development",
@@ -61,7 +66,8 @@ const ServicesPage = async () => {
             return (
               <div
                 key={service.name}
-                className="flex space-x-2 items-center bg-gray-50 hover:bg-gray-100 border-secondary border-2 rounded-xl mx-2 my-2 p-4 cursor-pointer transition duration-300 ease-in-out transform sm:hover:scale-105"
+                className="flex space-x-2 items-center bg-gray-50 hover:bg-gray-100 border-secondary border-2 rounded-xl mx-2 my-2 p-4 cursor-pointer transition duration-300 ease-in-out transform sm:hover:scale-105 hover:z-10"
+                
               >
                 <div className="bg-primary w-max h-max rounded-full p-5 text-white mb-4">
                   {service.icon}

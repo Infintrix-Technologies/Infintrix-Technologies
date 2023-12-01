@@ -1,4 +1,5 @@
 import HomepageHero from "@/components/HomepageHero";
+import Testimonials from "@/components/Testimonials";
 // import { authOptions } from "@/lib/auth";
 import { Button, Image } from "@nextui-org/react";
 import Link from "next/link";
@@ -62,6 +63,7 @@ export default async function Home() {
           </div>
         </div>
       </section>
+      {/* <Testimonials /> */}
     </>
   );
 }
