@@ -6,7 +6,7 @@ import TechStackItem from "@/components/TechStackItem";
 const PortfolioItem = async ({ portfolio_item }) => {
   return (
     <Link
-      href={`/portfolio/brokr-bindr-case-study`}
+      href={`/portfolio/${portfolio_item.slug}`}
       className="flex flex-col p-4 rounded-lg shadow-md hover:bg-gray-50 hover:z-10 cursor-pointer transition duration-300 ease-in-out transform sm:hover:scale-105 border-2 border-secondary"
     >
       <div className="content">
@@ -25,7 +25,7 @@ const PortfolioItem = async ({ portfolio_item }) => {
 
       <Image
         src={`${pb.baseUrl}/api/files/${portfolio_item.collectionName}/${portfolio_item.id}/${portfolio_item.featured_image}`}
-        alt="Portfolio Image"
+        alt={`${portfolio_item.name} Case Study`}
       />
     </Link>
   );

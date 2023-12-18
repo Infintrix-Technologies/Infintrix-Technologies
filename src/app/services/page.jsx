@@ -9,6 +9,7 @@ import {
 } from "react-icons/md";
 import { GiArtificialIntelligence } from "react-icons/gi";
 import { pb } from "@/lib/pb_conn";
+import Header from "@/components/Header";
 
 const ServicesPage = async () => {
   // const records = await pb.collection("services").getFullList({
@@ -56,18 +57,18 @@ const ServicesPage = async () => {
   ];
   return (
     <>
-      <div className="flex flex-col items-center justify-center">
-        <h1 className="text-2xl sm:text-4xl font-bold my-2">Our Services</h1>
-        <p className="text-gray-600 my-1 text-center">
-          Check our services we are expert in
-        </p>
+      <Header
+        pageTitle={`Our Services`}
+        pageDescription={`Check our services we are expert in`}
+      />
+      <div className="container mx-auto ">
+        {/* <div className="flex flex-col items-center justify-center"> */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-2">
           {servicesList.map((service) => {
             return (
               <div
                 key={service.name}
                 className="flex space-x-2 items-center bg-gray-50 hover:bg-gray-100 border-secondary border-2 rounded-xl mx-2 my-2 p-4 cursor-pointer transition duration-300 ease-in-out transform sm:hover:scale-105 hover:z-10"
-                
               >
                 <div className="bg-primary w-max h-max rounded-full p-5 text-white mb-4">
                   {service.icon}
@@ -83,6 +84,7 @@ const ServicesPage = async () => {
             );
           })}
         </div>
+        {/* </div> */}
       </div>
     </>
   );

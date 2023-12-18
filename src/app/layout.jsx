@@ -1,14 +1,12 @@
 import { Inter } from "next/font/google";
-import { Poppins } from 'next/font/google';
+import { Poppins } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
-
-
 const poppins = Poppins({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-poppins',
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-poppins",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 import "./globals.css";
@@ -17,7 +15,7 @@ import { ToastContainer, toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
 import MainFooter from "@/components/MainFooter";
-
+import TechMeshLinesBackground from "@/components/TechMeshLinesBackground";
 
 export const metadata = {
   title: "Infintrix Technologies",
@@ -33,7 +31,10 @@ export default function RootLayout({ children }) {
       >
         <WebsiteNavbar />
 
-        <div className="container mx-auto flex-1 my-6">{children}</div>
+        <div className="flex-1">
+          <TechMeshLinesBackground />
+          {children}
+        </div>
         <ToastContainer />
         <MainFooter />
       </body>
