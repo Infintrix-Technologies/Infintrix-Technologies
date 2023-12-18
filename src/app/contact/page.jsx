@@ -182,6 +182,7 @@ const ContactForm = () => {
                     name="name"
                     label="Your Name"
                     value={formData.name}
+                    onChange={handleChange}
                   />
                 </div>
               </div>
