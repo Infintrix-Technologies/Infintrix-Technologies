@@ -5,6 +5,7 @@ import PocketBase from "pocketbase";
 import { Input, Textarea, Button } from "@nextui-org/react";
 import { toast } from "react-toastify";
 
+
 const ContactFrom = () => {
     const initState = {
         name: "",
@@ -127,6 +128,7 @@ const ContactFrom = () => {
             </div>
           </div>
         </form>
+        
     </>
   )
 }

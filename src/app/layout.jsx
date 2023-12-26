@@ -16,6 +16,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import MainFooter from "@/components/MainFooter";
 import TechMeshLinesBackground from "@/components/TechMeshLinesBackground";
+import WhatsappWidgetContainer from "@/components/WhatsappWidgetContainer";
 
 export const metadata = {
   title: "Infintrix Technologies",
@@ -35,6 +36,7 @@ export default function RootLayout({ children }) {
           <TechMeshLinesBackground />
           {children}
         </div>
+        <WhatsappWidgetContainer/>
         <ToastContainer />
         <MainFooter />
       </body>
