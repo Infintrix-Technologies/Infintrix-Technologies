@@ -52,3 +52,10 @@
     list-style-type: disc;
     margin-left: 2.5rem;
 }
+.hover\:shadow-green-500:hover {
+    --tw-shadow: 0 0 0 3px rgba(72, 187, 120, 0.5);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+
+  

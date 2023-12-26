@@ -18,6 +18,7 @@ import MainFooter from "@/components/MainFooter";
 import TechMeshLinesBackground from "@/components/TechMeshLinesBackground";
 import WhatsappWidgetContainer from "@/components/WhatsappWidgetContainer";
 
+
 export const metadata = {
   title: "Infintrix Technologies",
   description: "Best Web Development Services Provider",
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
         suppressHydrationWarning={true}
       >
         <WebsiteNavbar />
+        
 
         <div className="flex-1">
           <TechMeshLinesBackground />

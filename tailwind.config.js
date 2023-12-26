@@ -27,7 +27,20 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    container: {
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
+      },
+    },
+    width: {
+      '1/3': '30.33%',
+    },
   },
+  
   darkMode: "class",
   plugins: [
     nextui({

@@ -67,7 +67,7 @@ const TechMeshLinesBackground = () => {
     };
   }, []); // Empty dependency array to run the effect only once on mount
 
-  return <canvas ref={canvasRef} style={{ position: "fixed" }} />;
+  return <canvas ref={canvasRef} style={{ position: "fixed", zIndex: "-1" }} />;
 };
 
 export default TechMeshLinesBackground;

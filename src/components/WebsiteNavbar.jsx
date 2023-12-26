@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import React from "react";
 import {
@@ -11,15 +11,20 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   Image,
+  Link
 } from "@nextui-org/react";
-import Link from "next/link";
+// import Link from "next/link";
 import { websiteNavbar } from "@/lib/nav";
 export default function WebsiteNavbar() {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   return (
     <>
       <Navbar>
-        <NavbarContent>
-          <NavbarMenuToggle className="sm:hidden text-secondary" />
+        <NavbarContent onMenuOpenChange={setIsMenuOpen}>
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          className="sm:hidden"
+        />
           <Link href="/">
             <NavbarBrand>
               <Image alt="kindly" src="/logo.png" width={140} />
@@ -66,6 +71,7 @@ export default function WebsiteNavbar() {
           ))}
         </NavbarMenu>
       </Navbar>
+      
     </>
   );
 }
