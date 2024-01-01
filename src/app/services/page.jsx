@@ -59,10 +59,7 @@ const ServicesPage = async () => {
   ];
   return (
     <>
-      <Header
-        pageTitle={`Our Services`}
-        pageDescription={`Check our services we are expert in`}
-      />
+      <h1 className="text-center text-5xl font-bold py-8">Our Services</h1>
       <div className="container mx-auto">
         <div className="sm:flex flex-wrap gap-5">
       {servicesList.map((service) => {

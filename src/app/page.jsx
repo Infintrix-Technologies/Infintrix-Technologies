@@ -3,6 +3,10 @@ import Testimonials from "@/components/Testimonials";
 // import { authOptions } from "@/lib/auth";
 import { Button, Image } from "@nextui-org/react";
 import Link from "next/link";
+import ServicesPage from "./services/page";
+import ContactForm from "./contact/page";
+import Header from "@/components/Header";
+import Technologies from "./technology/page";
 export default async function Home() {
   return (
     <>
@@ -63,7 +67,9 @@ export default async function Home() {
           </div>
         </div>
       </section>
-      {/* <Testimonials /> */}
+      <ServicesPage/>
+      <Technologies/>
+      <ContactForm/>
     </>
   );
 }

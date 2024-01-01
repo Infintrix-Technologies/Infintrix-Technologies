@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
         
 
         <div className="flex-1">
-          <TechMeshLinesBackground />
+          {/* <TechMeshLinesBackground /> */}
           {children}
         </div>
         <WhatsappWidgetContainer/>

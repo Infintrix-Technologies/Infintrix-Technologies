@@ -23,7 +23,7 @@ const paage = () => {
           </section>
 
           {/* What Sets Us Apart Section */}
-          <section className="mb-8">
+          <section className="container mb-8">
             <h2 className="text-2xl font-bold mb-4">What Sets Us Apart</h2>
             <ul className="list-disc pl-6">
               <li className="text-gray-700">

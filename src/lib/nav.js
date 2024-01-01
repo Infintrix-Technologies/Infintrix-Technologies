@@ -4,5 +4,5 @@ export const websiteNavbar = [
   { name: "Services", link: "/services", allowedPermissions: [], },
   { name: "Portfolio", link: "/portfolio", allowedPermissions: [] },
   { name: "About", link: "/about", allowedPermissions: [] },
-  { name: "Contact", link: "/contact", allowedPermissions: [] },
+  { name: "Blog", link: "/blog", allowedPermissions: [] },
 ];
