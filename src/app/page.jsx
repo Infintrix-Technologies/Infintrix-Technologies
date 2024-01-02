@@ -12,7 +12,7 @@ export default async function Home() {
     <>
       <HomepageHero />
       <section className="about">
-        <div className="container mx-auto my-8 p-8 bg-white shadow-md">
+        <div className="container mx-auto mt-8 p-8 bg-white shadow-md">
           {/* <h2 className="text-2xl font-semibold mb-4">Meet the Team</h2> */}
           <div className="">
             <h3 className="text-4xl font-bold mb-2 text-center">About Us</h3>
@@ -66,6 +66,27 @@ export default async function Home() {
             </div>
           </div>
         </div>
+        <div className="bg-secondary">
+          <div className="md:flex justify-evenly">
+            <div className="py-8">
+              <h1 className="text-white text-6xl text-center font-sans">10+</h1>
+              <h6 className="text-white text-lg pt-2 text-center font-semibold font-sans">Our Team</h6>
+            </div>
+            <div className="py-8">
+              <h1 className="text-white text-6xl text-center font-sans">50+</h1>
+              <h6 className="text-white text-lg pt-2 text-center font-semibold font-sans">Project Delivered</h6>
+            </div>
+            <div className="py-8">
+              <h1 className="text-white text-6xl text-center font-sans">5+</h1>
+              <h6 className="text-white text-lg pt-2 text-center font-semibold font-sans">Ongoing Projects
+              </h6>
+            </div>
+            <div className="py-8">
+              <h1 className="text-white text-6xl text-center font-sans">98%</h1>
+              <h6 className="text-white text-lg pt-2 text-center font-semibold font-sans">On-Time Delivered</h6>
+            </div>
+          </div>
+          </div>
       </section>
       <ServicesPage/>
       <Technologies/>

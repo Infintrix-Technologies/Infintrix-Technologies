@@ -62,9 +62,9 @@ const ServicesPage = async () => {
       <h1 className="text-center text-5xl font-bold py-8">Our Services</h1>
       <div className="container mx-auto">
         <div className="sm:flex flex-wrap gap-5">
-      {servicesList.map((service) => {
+      {servicesList.map((service, index) => {
             return (
-              <div className="md:w-1/3 sm:w-full rounded-lg my-4">
+              <div key={index} className="md:w-1/3 sm:w-full rounded-lg my-4">
 
                 <div className="py-6 px-7 rounded-lg shadow-lg hover:shadow-green-500">
                   <div className="flex justify-center mb-5">
