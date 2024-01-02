@@ -7,6 +7,8 @@ import ServicesPage from "./services/page";
 import ContactForm from "./contact/page";
 import Header from "@/components/Header";
 import Technologies from "./technology/page";
+import CompanyInfo from "@/components/CompanyInfo";
+import TestimonialSection from "@/components/Testimonials";
 export default async function Home() {
   return (
     <>
@@ -66,31 +68,12 @@ export default async function Home() {
             </div>
           </div>
         </div>
-        <div className="bg-secondary">
-          <div className="md:flex justify-evenly">
-            <div className="py-8">
-              <h1 className="text-white text-6xl text-center font-sans">10+</h1>
-              <h6 className="text-white text-lg pt-2 text-center font-semibold font-sans">Our Team</h6>
-            </div>
-            <div className="py-8">
-              <h1 className="text-white text-6xl text-center font-sans">50+</h1>
-              <h6 className="text-white text-lg pt-2 text-center font-semibold font-sans">Project Delivered</h6>
-            </div>
-            <div className="py-8">
-              <h1 className="text-white text-6xl text-center font-sans">5+</h1>
-              <h6 className="text-white text-lg pt-2 text-center font-semibold font-sans">Ongoing Projects
-              </h6>
-            </div>
-            <div className="py-8">
-              <h1 className="text-white text-6xl text-center font-sans">98%</h1>
-              <h6 className="text-white text-lg pt-2 text-center font-semibold font-sans">On-Time Delivered</h6>
-            </div>
-          </div>
-          </div>
+        <CompanyInfo/>
       </section>
       <ServicesPage/>
       <Technologies/>
       <ContactForm/>
+      <TestimonialSection/>
     </>
   );
 }

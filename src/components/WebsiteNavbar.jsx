@@ -17,6 +17,7 @@ import {
 import { websiteNavbar } from "@/lib/nav";
 export default function WebsiteNavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [showMenu, setShowMenu] = React.useState(false);
   return (
     <>
       <Navbar>
@@ -71,6 +72,7 @@ export default function WebsiteNavbar() {
           ))}
         </NavbarMenu>
       </Navbar>
+           
       
     </>
   );

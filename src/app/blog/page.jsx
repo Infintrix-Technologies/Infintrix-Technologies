@@ -1,5 +1,6 @@
 import React from 'react'
 import { Card, CardBody, CardFooter, Image, Button } from "@nextui-org/react";
+import Link from 'next/link';
 
 
 export default function Blog() {
@@ -64,10 +65,10 @@ export default function Blog() {
     ];
     return (
         <>
-            <div className='container'>
+            <div className='container mx-auto'>
                 <div className="gap-4 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
                     {list.map((item, index) => (
-                        <Card shadow="sm" key={index} isPressable>
+                        <Card shadow="sm" key={index}>
                             <CardBody className="overflow-visible p-0">
                                 <Image
                                     shadow="sm"
@@ -83,7 +84,7 @@ export default function Blog() {
                                 <p className="text-left font-semibold ps-3">{item.price}</p>
                                 <p className='text-left py-3 px-3'>{item.description}</p>
                                 <div className='text-left text-base pb-3 ps-3'>
-                                <a href='#'>{item.read}</a>
+                                <Link href='/article'>{item.read}</Link>
                                 </div>
                             </div>
                         </Card>
