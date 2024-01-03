@@ -13,7 +13,7 @@ const MainFooter = () => {
       <div className="container mx-auto">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
           <div>
-          <div className="flex justify-center pt-10">
+          <div className="flex pt-10">
           <img alt="kindly" src="/infintrix-logo-lanscapeview.png" width={200} />
           </div>
           <div className="py-5">
