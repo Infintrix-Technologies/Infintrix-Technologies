@@ -89,6 +89,7 @@ const Technologies = () => {
     <>
       {/* <Header pageTitle={`Our Technology Stack`} /> */}
       <div className="container mx-auto">
+        <img src="/s2.png" width={100} alt="" />
         <h1 className="text-center text-5xl font-bold py-8">Our Technology Stack</h1>
         <div className="sm:flex flex-wrap gap-5">
           {techList.map((service, index) => {

@@ -9,7 +9,7 @@ const MobileMenu = () => {
 
   return (
     <>
-    <nav className="flex items-center justify-between py-4 lg:px-8" aria-label="Global">
+    <nav className="flex z-50 items-center justify-between py-4 lg:px-8" aria-label="Global">
     
     <div className="flex lg:hidden">
       <button
@@ -23,7 +23,7 @@ const MobileMenu = () => {
     </div>
 
   </nav>
-    <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+    <Dialog as="div" className="lg:hidden z-50" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
     <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10" style={{width: "100%"}}>
       <div className="flex items-center justify-between">
         <a href="#" className="-m-1.5 p-1.5">
