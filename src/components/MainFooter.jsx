@@ -5,6 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { CiLocationOn } from "react-icons/ci";
 import { MdEmail } from "react-icons/md";
+import { SiUpwork } from "react-icons/si";
 
 
 const MainFooter = () => {
@@ -14,7 +15,9 @@ const MainFooter = () => {
         <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
           <div>
           <div className="flex pt-10">
+            <Link href='/'>
           <img alt="kindly" src="/infintrix-logo-lanscapeview.png" width={200} />
+          </Link>
           </div>
           <div className="py-5">
           <p className="pb-5">We are a software development and engineering solutions agency that is your bridge to the digital pinnacle.</p>
@@ -36,9 +39,19 @@ const MainFooter = () => {
             </div>
             <h1 className="text-3xl font-bold pt-7">Socials</h1>
             <div className="flex gap-5 py-4">
+              <Link href="https://www.facebook.com/infintrixtech?mibextid=zLoPMf">
             <FaFacebook className="text-2xl" />
+              </Link>
+              <Link href={"https://pk.linkedin.com/company/infintrix"}>
             <FaLinkedin className="text-2xl" />
+              </Link>
+              <Link href={"https://www.instagram.com/infintrix.tech/?igsh=ZmtlbTZ1b3dqNXNr"}>
             <AiFillInstagram className="text-2xl" />
+            </Link>
+            <Link href={"https://www.upwork.com/agencies/1694374709939769344/"}>
+            <SiUpwork className="text-2xl" />
+
+            </Link>
             </div>
 
            

@@ -29,8 +29,9 @@ export default function WebsiteNavbar() {
             <MobileMenu />
             </div>
             <div className="flex" style={{width: "185px", height: "auto"}}>
-
+            <Link href='/'>
             <img src="/logo.png" alt="" />
+            </Link>
             </div>
 
           
@@ -69,6 +70,7 @@ export default function WebsiteNavbar() {
           </div>
         </div> */}
       </div>
+      <div className="flex flex-col">
       <Navbar className="hidden sm:flex">
         <NavbarContent>
           <Link href="/" className="pr-8">
@@ -108,6 +110,7 @@ export default function WebsiteNavbar() {
           </NavbarItem>
         </NavbarContent>
       </Navbar>
+      </div>
 
 
     </>

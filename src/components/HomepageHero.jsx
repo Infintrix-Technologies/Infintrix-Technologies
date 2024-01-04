@@ -1,10 +1,12 @@
+"use client"
 import React from "react";
 import { Button } from "@nextui-org/react";
 import Link from "next/link";
+import { TypeAnimation } from 'react-type-animation';
 const HomepageHero = () => {
   return (
     <>
-      <div className="relative -z-10 pt-10">
+      <div className="relative pt-10">
         <div
           className="absolute -z-10 inset-x-0 -top-40 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
@@ -18,16 +20,33 @@ const HomepageHero = () => {
             }}
           ></div>
         </div>
-        <div className="py-5 md:py-20 lg:pb-10">
+        <div className="py-5 md:py-5 lg:pb-10">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-primary sm:text-6xl uppercase">
-                Web and Mobile Solutions
+              <h1 className="text-4xl font-bold tracking-tight pb-6 text-primary sm:text-6xl uppercase">
+                We Provide
               </h1>
+              <TypeAnimation
+      sequence={[
+        'Web and Mobile Solutions', // Types 'One'
+        2000, // Waits 1s
+        'Artifical and Machine Learning', // Deletes 'One' and types 'Two'
+        2000, // Waits 2s
+        'E-commerce Solutions',
+        2000, // Types 'Three' without deleting 'Two'
+        
+      ]}
+      speed={15}
+      wrapper="span"
+      cursor={true}
+      repeat={Infinity}
+      className="text-4xl font-bold tracking-tight text-primary sm:text-6xl uppercase"
+      style={{ fontSize: '2em', display: 'inline-block' }}
+    />
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 We craft your imaginations into Powerful Solutions at Infintrix.
               </p>
-              <div className="mt-10 flex items-center justify-center gap-x-3">
+              <div className="mt-10 z-30 flex items-center justify-center gap-x-3">
                 <Button
                   as={Link}
                   href="/services"
@@ -45,6 +64,7 @@ const HomepageHero = () => {
                   Portfolio
                 </Button>
               </div>
+              
             </div>
           </div>
         </div>

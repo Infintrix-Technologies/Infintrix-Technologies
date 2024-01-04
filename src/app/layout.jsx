@@ -28,16 +28,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} min-h-screen flex flex-col h-screen`}
+        className={`${poppins.className}`}
         suppressHydrationWarning={true}
       >
         <WebsiteNavbar />
-        
-
-        <div className="flex-1">
           <TechMeshLinesBackground />
           {children}
-        </div>
+        
         <WhatsappWidgetContainer/>
         <ToastContainer />
         <MainFooter />

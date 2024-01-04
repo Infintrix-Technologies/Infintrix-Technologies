@@ -59,9 +59,12 @@ const ServicesPage = async () => {
   ];
   return (
     <>
+    <div>
     <div className="bg_img">
       <h1 className="text-center text-5xl font-bold py-8">Our Services</h1>
-      </div>
+    </div>
+    </div>
+      
       <div className="container mx-auto">
         <div className="sm:flex flex-wrap gap-5">
       {servicesList.map((service, index) => {

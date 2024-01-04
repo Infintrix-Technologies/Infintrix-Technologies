@@ -70,7 +70,10 @@ const Carousel = () => {
     <>
       
       <div className="container w-full max-w-4xl mx-auto pb-10">
+      <div className='relative'>
+        <img src="/4.png" className='absolute' style={{top: "45%", left: "53%", zIndex: "-1"}} width={100} alt="" />
       <h1 className="text-center text-5xl font-bold py-8">Our Clients</h1>
+        </div>
 
       <Slider {...settings}>
         {slides.map((slide, index) => (
