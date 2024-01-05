@@ -72,8 +72,8 @@ export default async function Home() {
       </section>
       <ServicesPage/>
       <Technologies/>
-      <ContactForm/>
       <TestimonialSection/>
+      <ContactForm/>
     </>
   );
 }

@@ -65,6 +65,12 @@
     height: 128px;
 
 }
+.bg_img1 {
+    background-image: url(../../public/13.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
 
 
   

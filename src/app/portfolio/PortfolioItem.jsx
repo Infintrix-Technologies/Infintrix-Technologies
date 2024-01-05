@@ -10,13 +10,13 @@ const PortfolioItem = async ({ portfolio_item }) => {
       className="flex flex-col p-4 rounded-lg shadow-md hover:bg-gray-50 hover:z-10 cursor-pointer transition duration-300 ease-in-out transform sm:hover:scale-105 border-2 border-secondary"
     >
       <div className="content">
-        <h2 className="text-2xl font-bold mb-4">{portfolio_item.name}</h2>
+        <h2 className="text-2xl text-center font-bold mb-4">{portfolio_item.name}</h2>
         {/* <p className="text-gray-600 mb-4 text-lg leading-6">
           Over the past 10 years, we have designed and built a wide range of
           high-quality products from scratch. Our team has finished various web
           and mobile apps related to various spheres including e-learning.
         </p> */}
-        <div className="stack flex my-6">
+        <div className="stack flex justify-center gap-4 my-6">
           {portfolio_item.expand.stack.map((stack_item, i) => (
             <TechStackItem key={i} stack_item={stack_item} />
           ))}

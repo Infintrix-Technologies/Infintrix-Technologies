@@ -1,15 +1,29 @@
+
+import CompanyInfo from "@/components/CompanyInfo";
 import Header from "@/components/Header";
+import CompanyInfoAbout from "@/components/CompanyInfoAbout";
 import React from "react";
 
+
 const paage = () => {
+  
   return (
     <>
-      <Header
+      {/* <Header
         pageTitle={`About Us`}
         pageDescription={` Welcome to Infintrix Technologies, where innovation meets excellence
         in the world of web and mobile development.`}
-      />
-      <div className="flex justify-center">
+      /> */}
+      <div className="mb-8">
+    <div className="bg_img">
+      <h1 className="text-center text-5xl font-bold pt-8">About Us</h1>
+      <p className="text-center z-10 my-4">Welcome to Infintrix Technologies, where innovation meets excellence
+        in the world of web and mobile development.</p>
+    </div>
+    </div>
+
+    <div className="container mx-auto">
+      <div className="md:flex justify-evenly items-center mb-5">
         <div className="max-w-2xl p-8 bg-white shadow-lg rounded-md">
           {/* Mission Section */}
           <section className="mb-8">
@@ -71,6 +85,10 @@ const paage = () => {
             <p className="text-gray-700">Let us be your technology partner.</p>
           </section>
         </div>
+        <div>
+        <CompanyInfoAbout/>
+        </div>
+      </div>
       </div>
     </>
   );

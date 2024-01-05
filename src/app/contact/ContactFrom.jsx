@@ -69,9 +69,11 @@ const ContactFrom = () => {
                     label="Your Name"
                     value={formData.name}
                     onChange={handleChange}
+                    style={{width: "100%"}}
                   />
                 </div>
               </div>
+              
 
               <div className="sm:col-span-2">
                 <div className="mt-2.5">
