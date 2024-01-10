@@ -3,7 +3,7 @@ import React from 'react'
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 
-export default function companyInfoAbout() {
+export default function CompanyInfoAbout() {
     const { ref, inView } = useInView({
         triggerOnce: true, // Ensures it triggers only once
         rootMargin: '-50px 0px', // Adjust rootMargin as needed for the trigger point
