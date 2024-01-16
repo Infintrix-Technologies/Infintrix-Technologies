@@ -7,11 +7,11 @@ const Technologies = () => {
             name: "Front End Development",
             excerpt:
               "Our talented engineers craft interactive designs in prototypes that guarantee a user-friendly experience.",
-            icon: "https://devflovv.com/wp-content/uploads/2023/09/Front-End-Icon.png",
+            icon: "/images/Front-End-Icon.png",
             tools: [
-              'https://devflovv.com/wp-content/uploads/svg/react-js.svg',
-              'https://devflovv.com/wp-content/uploads/svg/angular-icon-1.svg',
-              'https://devflovv.com/wp-content/uploads/svg/vue-js-1.svg',
+              '/images/react-js.svg',
+              '/images/angular-icon-1.svg',
+              '/images/vue-js-1.svg',
               // Add more image URLs here if needed
             ]
           },
@@ -19,13 +19,13 @@ const Technologies = () => {
           name: "Back End Development",
           excerpt:
             "Our tech-savvy developers are MEAN, MEVN and MERN stack experts delivering fully customized results.",
-          icon: ("https://devflovv.com/wp-content/uploads/2023/09/Tech-1-Icon.png"),
+          icon: ("/images/Tech-1-Icon.png"),
           tools: [
-            'https://devflovv.com/wp-content/uploads/svg/nodejs-icon.svg',
-            'https://devflovv.com/wp-content/uploads/svg/dotnet.svg',
-            'https://devflovv.com/wp-content/uploads/svg/java-4.svg',
-            'https://devflovv.com/wp-content/uploads/svg/laravel-2.svg',
-            'https://devflovv.com/wp-content/uploads/svg/python-5.svg',
+            '/images/nodejs-icon.svg',
+            '/images/dotnet.svg',
+            '/images/java-4.svg',
+            '/images/laravel-2.svg',
+            '/images/python-5.svg',
             // Add more image URLs here if needed
           ]
         },
@@ -33,12 +33,12 @@ const Technologies = () => {
           name: "UI/UX Design",
           excerpt:
             "Our masterful and creative UI/UX designers create user-centric platforms that navigate smoothly. ",
-          icon: ("https://devflovv.com/wp-content/uploads/2023/09/Lightbulb-Icon.png"),
+          icon: ("/images/Lightbulb-Icon.png"),
           tools: [
-            'https://devflovv.com/wp-content/uploads/svg/Illustrator.svg',
-            'https://devflovv.com/wp-content/uploads/svg/Figma.svg',
-            'https://devflovv.com/wp-content/uploads/svg/Invision.svg',
-            'https://devflovv.com/wp-content/uploads/svg/Photoshop.svg',
+            '/images/Illustrator.svg',
+            '/images/Figma.svg',
+            '/images/Invision.svg',
+            '/images/Photoshop.svg',
             // Add more image URLs here if needed
           ]
         },
@@ -46,13 +46,13 @@ const Technologies = () => {
           name: "Cloud/Dev Ops",
           excerpt:
             "We know how to strike the perfect balance in operations and development to accelerate your product cycles.",
-          icon: ("https://devflovv.com/wp-content/uploads/2023/09/Cloud-Icon.png"),
+          icon: ("/images/Cloud-Icon.png"),
           tools: [
-            'https://devflovv.com/wp-content/uploads/svg/aws-logo.svg',
-            'https://devflovv.com/wp-content/uploads/svg/google-cloud-1.svg',
-            'https://devflovv.com/wp-content/uploads/svg/microsoft-azure-3.svg',
-            'https://devflovv.com/wp-content/uploads/svg/docker.svg',
-            'https://devflovv.com/wp-content/uploads/svg/kubernets.svg',
+            '/images/aws-logo.svg',
+            '/images/google-cloud-1.svg',
+            '/images/microsoft-azure-3.svg',
+            '/images/docker.svg',
+            '/images/kubernets.svg',
             // Add more image URLs here if needed
           ]
         },
@@ -60,11 +60,11 @@ const Technologies = () => {
           name: "Database",
           excerpt:
             "Our database programmers and developers contribute to high-quality data through their expertise in data governance.",
-          icon: ("https://devflovv.com/wp-content/uploads/2023/09/Database-Icon.png"),
+          icon: ("/images/Database-Icon.png"),
           tools: [
-            'https://devflovv.com/wp-content/uploads/svg/MongoDB.svg',
-            'https://devflovv.com/wp-content/uploads/svg/sql-database-generic.svg',
-            'https://devflovv.com/wp-content/uploads/svg/neo4j.svg',
+            '/images/MongoDB.svg',
+            '/images/sql-database-generic.svg',
+            '/images/neo4j.svg',
             // Add more image URLs here if needed
           ]
         },
@@ -73,12 +73,12 @@ const Technologies = () => {
           name: "Others",
           excerpt:
             "We also excel in many other multiple platforms like React Native, Ionic, Arduino, iOS, etc.",
-          icon: ("https://devflovv.com/wp-content/uploads/2023/09/Tech-5-Icon.png"),
+          icon: ("/images/Tech-5-Icon.png"),
           tools: [
-            'https://devflovv.com/wp-content/uploads/svg/react-native-1.svg',
-            'https://devflovv.com/wp-content/uploads/svg/ionic-icon-svgrepo-com.svg',
-            'https://devflovv.com/wp-content/uploads/svg/arduino-1.svg',
-            'https://devflovv.com/wp-content/uploads/svg/ios-2.svg',
+            '/images/react-native-1.svg',
+            '/images/ionic-icon-svgrepo-com.svg',
+            '/images/arduino-1.svg',
+            '/images/ios-2.svg',
 
             // Add more image URLs here if needed
           ]

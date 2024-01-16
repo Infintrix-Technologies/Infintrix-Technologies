@@ -26,7 +26,7 @@ const MobileMenu = () => {
     <Dialog as="div" className="lg:hidden z-50" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
     <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10" style={{width: "100%"}}>
       <div className="flex items-center justify-between">
-        <Link href="/" className="-m-1.5 p-1.5">
+        <Link href="/" onClick={() => setMobileMenuOpen(false)} className="-m-1.5 p-1.5">
         <img src="/logo.png" width={140} alt="" />
         </Link>
         <button
@@ -38,16 +38,16 @@ const MobileMenu = () => {
           <XMarkIcon className="h-6 w-6" aria-hidden="true" />
         </button>
       </div>
-      <div className="mt-6 flow-root">
+      <div className="flex justify-center items-center" style={{height: "80vh"}}>
         <div className="-my-6 divide-y divide-gray-500/10">
           <div className="space-y-2 py-6">
-          <ul>
+          <ul className='text-center'>
               {websiteNavbar.map((item, index) => (
                 <>
                   <li className='my-2' key={`${item.name}-${index}`}>
                     <Link
                     onClick={() => setMobileMenuOpen(false)}
-                      className="rounded-lg"
+                      className="rounded-lg text-2xl font-semibold leading-10"
                       as={Link}
                       href={item.link}
                       variant="light"
