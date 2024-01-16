@@ -1,9 +1,9 @@
-
-import CompanyInfo from "@/components/CompanyInfo";
-import Header from "@/components/Header";
 import CompanyInfoAbout from "@/components/CompanyInfoAbout";
 import React from "react";
-
+export const metadata = {
+  title: "About Infintrix Technologies - Unleashing Innovation with Expertise",
+  description: "Discover the story behind Infintrix Technologies, a pioneering force in web development. At Infintrix, we combine passion with expertise to redefine digital solutions. Learn about our journey, values, and the dedicated team that drives our success. From our humble beginnings to becoming a trusted name, explore how Infintrix is committed to delivering unparalleled excellence in every project. Join us on this transformative journey where innovation meets experience, and discover why Infintrix Technologies is more than a service provider – we're your digital partner for success."
+};
 
 const paage = () => {
   

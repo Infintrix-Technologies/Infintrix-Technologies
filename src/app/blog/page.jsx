@@ -2,6 +2,10 @@ import React from "react";
 import { Card, CardBody, CardFooter, Image, Button } from "@nextui-org/react";
 import Link from "next/link";
 import { pb } from "@/lib/pb_conn";
+export const metadata = {
+  title: 'Blog',
+  description: 'blog',
+}
 
 const Blog = async () => {
   const records = await pb.collection("articles").getFullList({

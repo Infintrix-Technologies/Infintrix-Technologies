@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { websiteNavbar } from "@/lib/nav";
-// import { Button, Link } from '@nextui-org/react';
 import Link from "next/link";
 const MobileMenu = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)

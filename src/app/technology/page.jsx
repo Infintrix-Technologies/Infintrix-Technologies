@@ -1,6 +1,8 @@
-import Header from '@/components/Header';
 import React from 'react'
-
+export const metadata = {
+  title: 'Our Technologies',
+  description: 'our technologies',
+}
 const Technologies = () => {
     const techList = [
         {
@@ -87,7 +89,6 @@ const Technologies = () => {
       ];
   return (
     <>
-      {/* <Header pageTitle={`Our Technology Stack`} /> */}
       <div className="container mx-auto">
         <div className='relative'>
         <img src="/s1.png" className='absolute' style={{top: "56%", left: "54%", zIndex: "-1"}} width={100} alt="" />

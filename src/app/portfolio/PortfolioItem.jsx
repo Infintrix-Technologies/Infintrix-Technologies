@@ -1,4 +1,4 @@
-import { Image, Button } from "@nextui-org/react";
+import { Image } from "@nextui-org/react";
 import Link from "next/link";
 import { pb } from "@/lib/pb_conn";
 import TechStackItem from "@/components/TechStackItem";

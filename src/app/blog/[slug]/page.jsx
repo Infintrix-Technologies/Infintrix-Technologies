@@ -3,7 +3,10 @@ import React from 'react'
 import { pb } from "@/lib/pb_conn";
 import dayjs from 'dayjs';
 import { Image } from '@nextui-org/react';
-import Error from '@/app/error/page';
+export const metadata = {
+  title: 'Blog',
+  description: 'blog',
+}
 const BlogArticle = async ({params}) => {
 
   try{

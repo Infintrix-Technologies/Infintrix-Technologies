@@ -1,21 +1,14 @@
 "use client"
-
 import React from "react";
-import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
 import {
   Navbar,
   NavbarBrand,
   NavbarContent,
   NavbarItem,
   Button,
-  NavbarMenuToggle,
-  NavbarMenu,
-  NavbarMenuItem,
   Image,
-
 } from "@nextui-org/react";
 import Link from "next/link";
-import { CiMenuBurger } from "react-icons/ci";
 import { websiteNavbar } from "@/lib/nav";
 import MobileMenu from "./MobileMenu";
 export default function WebsiteNavbar() {
@@ -46,29 +39,6 @@ export default function WebsiteNavbar() {
           </Button>
         </div>
 
-        {/* <div className="relative">
-          <div className="absolute h-screen z-50" style={{ width: "100%" }}>
-            <div className="flex items-center justify-center text-center z-30 bg-blue-500 text-white h-full">
-              <div>
-              {websiteNavbar.map((item, index) => (
-                <>
-                  <div key={`${item.name}-${index}`} open={isMenuOpen} onClose={setIsMenuOpen}>
-                    <Button
-                      className="rounded-lg"
-                      as={Link}
-                      href={item.link}
-                      variant="light"
-                    >
-                      {item.name}
-                    </Button>
-                  </div>
-
-                </>
-              ))}
-              </div>
-            </div>
-          </div>
-        </div> */}
       </div>
       <div className="flex flex-col">
       <Navbar className="hidden sm:flex">

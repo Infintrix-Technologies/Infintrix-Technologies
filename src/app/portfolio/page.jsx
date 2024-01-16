@@ -3,6 +3,10 @@ import React from "react";
 import PortfolioItem from "./PortfolioItem";
 import { pb } from "@/lib/pb_conn";
 import Header from "@/components/Header";
+export const metadata = {
+  title: 'Portfolio',
+  description: 'portfolio',
+}
 
 const Portfolio = async () => {
   const portfolio_list = await pb.collection("projects").getFullList({

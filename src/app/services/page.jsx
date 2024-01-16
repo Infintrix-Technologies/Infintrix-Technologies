@@ -1,16 +1,8 @@
 import React from "react";
-import { BsCart, BsCode, BsCodeSlash } from "react-icons/bs";
-import {
-  MdCode,
-  MdDesk,
-  MdOutlineDesktopMac,
-  MdSettings,
-  MdSmartphone,
-} from "react-icons/md";
-import { GiArtificialIntelligence } from "react-icons/gi";
-// import { pb } from "@/lib/pb_conn";
-import Header from "@/components/Header";
-
+export const metadata = {
+  title: "Services - Unlocking Excellence in Every Solution",
+  description: "Explore a comprehensive range of cutting-edge services at Infintrix Technologies. Our dedicated team is committed to delivering excellence in web development, mobile app development, and digital solutions. From concept to execution, we leverage the latest technologies to transform your ideas into impactful digital experiences. Discover the power of innovation with Infintrix - where every service is crafted to exceed expectations and drive success for your business."
+};
 
 
 const ServicesPage = async () => {

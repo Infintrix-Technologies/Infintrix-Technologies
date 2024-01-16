@@ -1,7 +1,10 @@
 import TechStackItem from "@/components/TechStackItem";
 import { pb } from "@/lib/pb_conn";
-import { useRouter } from "next/navigation";
 import React from "react";
+export const metadata = {
+  title: 'Portfolio',
+  description: 'portfolio',
+}
 
 const CaseStudyPage = async ({ params }) => {
   let portfolio_item = await pb
