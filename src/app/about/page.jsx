@@ -1,3 +1,4 @@
+import CompanyInfo from "@/components/CompanyInfo";
 import CompanyInfoAbout from "@/components/CompanyInfoAbout";
 import React from "react";
 export const metadata = {
@@ -14,82 +15,58 @@ const paage = () => {
         pageDescription={` Welcome to Infintrix Technologies, where innovation meets excellence
         in the world of web and mobile development.`}
       /> */}
+      
+
+    <div className="about_img">
+      <div className="overlay"></div>
       <div className="mb-8">
-    <div className="bg_img">
-      <h1 className="text-center text-5xl font-bold pt-8">About Us</h1>
-      <p className="text-center z-10 my-4">Welcome to Infintrix Technologies, where innovation meets excellence
+    <div className="relative top-48">
+      <h1 className="text-center text-5xl font-bold pt-8 text-white">About Us</h1>
+      <p className="text-center text-white z-10 my-4">Welcome to Infintrix Technologies, where innovation meets excellence
         in the world of web and mobile development.</p>
     </div>
     </div>
-
+    </div>
     <div className="container mx-auto">
-      <div className="md:flex justify-evenly items-center mb-5">
-        <div className="max-w-2xl p-8 bg-white shadow-lg rounded-md">
-          {/* Mission Section */}
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
-            <p className="text-gray-700">
-              Our mission is to be at the forefront of technological
-              advancements, providing our clients with bespoke solutions that
-              not only meet their current needs but also anticipate and adapt to
-              future challenges.
-            </p>
-          </section>
-
-          {/* What Sets Us Apart Section */}
-          <section className="container mb-8">
-            <h2 className="text-2xl font-bold mb-4">What Sets Us Apart</h2>
-            <ul className="list-disc pl-6">
-              <li className="text-gray-700">
-                Expertise: Our team comprises skilled professionals with a
-                diverse range of expertise in web and mobile development
-                technologies.
-              </li>
-              <li className="text-gray-700">
-                Client-Centric Approach: Your success is our priority. We
-                believe in fostering collaborative partnerships with our
-                clients.
-              </li>
-              <li className="text-gray-700">
-                Innovation: Innovation is the heartbeat of our company. We
-                embrace creativity and out-of-the-box thinking.
-              </li>
-            </ul>
-          </section>
-
-          {/* Services Section */}
-          <section className="mb-8">
-            <h2 className="text-2xl font-bold mb-4">Our Services</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="p-4 bg-gray-200 rounded-md">
-                <h3 className="text-xl font-bold mb-2">Web Development</h3>
-                <p className="text-gray-700">
-                  From responsive websites to complex web applications.
-                </p>
-              </div>
-              <div className="p-4 bg-gray-200 rounded-md">
-                <h3 className="text-xl font-bold mb-2">Mobile Development</h3>
-                <p className="text-gray-700">
-                  Crafting native and cross-platform mobile applications.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          {/* Call to Action */}
-          <section>
-            <p className="text-gray-700">
-              Join us on the digital journey. Embark on a transformative digital
-              journey with Infintrix Technologies.
-            </p>
-            <p className="text-gray-700">Let us be your technology partner.</p>
-          </section>
-        </div>
-        <div>
-        <CompanyInfoAbout/>
-        </div>
+    <h1 className="text-6xl font-bold py-8 text-blue-400">About Us</h1>
+    <div className="md:flex justify-evenly">
+      <div className="md:w-2/4">
+      <h2 className="text-lg font-semibold pb-3
+       text-blue-600">Our Mission & Vision</h2>
+      <p className=''>At <strong>Infintrix Solution,</strong> our mission is to empower businesses by leveraging the power of technology. We aim to develop cutting-edge software solutions that streamline operations, enhance productivity, and drive growth for our clients. Through our expertise and dedication, we strive to make a positive impact on businesses across various industries.</p>
       </div>
+      <div className="my-5">
+        <img src="/images/mission.jpg" className='w-full md:max-w-xs' style={{borderRadius: "30px 0px 30px 0px "}} alt="" />
       </div>
+    </div>
+    <div className="md:flex justify-evenly">
+      <div className="md:w-2/4">
+      <h2 className="text-lg font-semibold pb-3 text-blue-600">Our Approach</h2>
+      <p className=''>At <strong>Infintrix Solution,</strong> our approach is simple yet effective. We believe in collaborating closely with our clients throughout the project lifecycle to deliver successful software solutions. Our process involves thorough discovery, meticulous planning, user-centric design, agile development, and rigorous testing. By combining our expertise with your vision, we create innovative and tailored solutions that drive your business forward.</p>
+      </div>
+      <div className="my-5">
+        <img src="/images/approach.jpg" className='w-full md:max-w-sm' style={{borderRadius: "30px 0px 30px 0px "}} alt="" />
+      </div>
+    </div>
+    </div>
+    <div className="my-5">
+    <CompanyInfo/>
+    </div>
+    <div className='bg-blue-400'>
+      <div className="container mx-auto">
+    <div className="md:flex justify-around items-center py-10">
+      <div>
+        <img src="/images/timely.jpg" className='w-full md:max-w-sm' style={{borderRadius: "30px 0px 30px 0px "}} alt="" />
+      </div>
+      <div className="md:w-2/4 ps-5">
+        <p className="py-5 text-white">Ensure High Availability of Your Services</p>
+        <h1 className="lg:text-6xl text-4xl font-bold pb-4 text-white">Timely Service</h1>
+        <p className="text-white">Provide users with appropriate view and access permissions to request, problems, changes, contracts, assets, solutions, and reports with our experienced professionals.</p>
+      </div>
+    </div>
+        </div>
+    </div>
+      
     </>
   );
 };

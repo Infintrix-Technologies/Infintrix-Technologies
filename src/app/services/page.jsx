@@ -15,7 +15,7 @@ const ServicesPage = async () => {
       name: "Web Application Development",
       excerpt:
         "We specialize in creating robust and scalable web applications tailored to meet your business requirements. From dynamic websites to complex web solutions, our team is committed to delivering high-quality and user-friendly experiences.",
-      icon: ("/images/Webdev.svg"),
+      icon: ("/images/webdev.svg"),
     },
     {
       name: "Mobile Application Development",

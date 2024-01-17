@@ -17,6 +17,7 @@ import "react-toastify/dist/ReactToastify.css";
 import MainFooter from "@/components/MainFooter";
 import TechMeshLinesBackground from "@/components/TechMeshLinesBackground";
 import WhatsappWidgetContainer from "@/components/WhatsappWidgetContainer";
+import HireUs from "@/components/HireUs";
 
 
 // export const metadata = {
@@ -42,6 +43,7 @@ export default function RootLayout({ children }) {
         
         <WhatsappWidgetContainer/>
         <ToastContainer />
+        <HireUs/>
         <MainFooter />
       </body>
     </html>

@@ -39,7 +39,7 @@ const BlogArticle = async ({params}) => {
       </div>
       </div>
         <div className='flex justify-center mb-5'>
-        <div className='max-w-3xl p-8 bg-white shadow-lg rounded-md'>
+        <div className='max-w-3xl p-3 md:p-8 bg-white shadow-lg rounded-md'>
           <p className='pb-5'>{user.name} | {category.name} | {dayjs(article_item.created).format('dddd, YYYY-MM-DD')}</p>
           <Image shadow="sm" radius="lg" width="100%" className="w-full object-cover" src={`${pb.baseUrl}/api/files/${article_item.collectionName}/${article_item.id}/${article_item.featured_image}`} alt={`${article_item.name} Article`} />
   

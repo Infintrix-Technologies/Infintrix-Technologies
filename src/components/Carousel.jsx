@@ -79,7 +79,7 @@ const Carousel = () => {
         {slides.map((slide, index) => (
           <div key={index} className="w-full">
             <div className='flex justify-center py-8'>
-            <img src={slide.imageUrl} alt={`Slide ${index}`} className="w-full" />
+            <img src={slide.imageUrl} alt={`Slide ${index}`} />
             </div>
             <div className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">{slide.detail}</div>
             <div className='flex justify-center pt-4'>

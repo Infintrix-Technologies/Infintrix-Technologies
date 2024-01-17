@@ -6,15 +6,24 @@ import { AiFillInstagram } from "react-icons/ai";
 import { CiLocationOn } from "react-icons/ci";
 import { MdEmail } from "react-icons/md";
 import { SiUpwork } from "react-icons/si";
+import HireUs from "./HireUs";
+
+
+
 
 
 const MainFooter = () => {
   return (
+    <>
+    
+    {/* <HireUs/> */}
+    
     <footer className="bg-secondary text-white p-4">
       <div className="container mx-auto">
+       
         <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
           <div>
-          <div className="flex pt-10">
+          <div className="flex pt-40 md:pt-28 lg:pt-32">
             <Link href='/'>
           <img alt="kindly" src="/infintrix-logo-lanscapeview.png" width={200} />
           </Link>
@@ -27,7 +36,7 @@ const MainFooter = () => {
           </div>
 
           <div>
-            <div className="lg:ps-14 md:pt-14">
+            <div className="lg:ps-14 md:pt-28 lg:pt-32">
             <h1 className="text-3xl pb-5">Contact Us</h1>
             <div className="flex">
             <MdEmail className="text-2xl pr-1" />
@@ -52,6 +61,8 @@ const MainFooter = () => {
             <SiUpwork className="text-2xl" />
 
             </Link>
+            
+
             </div>
 
            
@@ -71,6 +82,7 @@ const MainFooter = () => {
         </div>
       </div>
     </footer>
+    </>
   );
 };
 
