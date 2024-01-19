@@ -46,7 +46,8 @@ const MobileMenu = () => {
                   <li className='my-2' key={`${item.name}-${index}`}>
                     <Link
                     onClick={() => setMobileMenuOpen(false)}
-                      className="rounded-lg text-2xl font-semibold leading-10 hover:text-blue-200"
+                    style={{lineHeight: "3.5rem"}}
+                      className="rounded-lg text-2xl font-semibold hover:text-blue-200"
                       as={Link}
                       href={item.link}
                       variant="light"

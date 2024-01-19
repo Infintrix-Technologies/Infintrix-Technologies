@@ -20,7 +20,7 @@ const paage = () => {
     <div className="about_img">
       <div className="overlay"></div>
       <div className="mb-8">
-    <div className="relative top-48">
+    <div className="relative top-24">
       <h1 className="text-center text-5xl font-bold pt-8 text-white">About Us</h1>
       <p className="text-center text-white z-10 my-4">Welcome to Infintrix Technologies, where innovation meets excellence
         in the world of web and mobile development.</p>
@@ -28,10 +28,9 @@ const paage = () => {
     </div>
     </div>
     <div className="container mx-auto">
-    <h1 className="text-6xl font-bold py-8 text-blue-400">About Us</h1>
-    <div className="md:flex justify-evenly">
-      <div className="md:w-2/4">
-      <h2 className="text-lg font-semibold pb-3
+    <div className="md:flex justify-around">
+      <div className="md:w-2/4 pt-10">
+      <h2 className="text-2xl font-semibold pb-3
        text-blue-600">Our Mission & Vision</h2>
       <p className=''>At <strong>Infintrix Solution,</strong> our mission is to empower businesses by leveraging the power of technology. We aim to develop cutting-edge software solutions that streamline operations, enhance productivity, and drive growth for our clients. Through our expertise and dedication, we strive to make a positive impact on businesses across various industries.</p>
       </div>
@@ -39,9 +38,9 @@ const paage = () => {
         <img src="/images/mission.jpg" className='w-full md:max-w-xs' style={{borderRadius: "30px 0px 30px 0px "}} alt="" />
       </div>
     </div>
-    <div className="md:flex justify-evenly">
+    <div className="md:flex justify-around md:ps-3">
       <div className="md:w-2/4">
-      <h2 className="text-lg font-semibold pb-3 text-blue-600">Our Approach</h2>
+      <h2 className="text-2xl font-semibold pb-3 text-blue-600">Our Approach</h2>
       <p className=''>At <strong>Infintrix Solution,</strong> our approach is simple yet effective. We believe in collaborating closely with our clients throughout the project lifecycle to deliver successful software solutions. Our process involves thorough discovery, meticulous planning, user-centric design, agile development, and rigorous testing. By combining our expertise with your vision, we create innovative and tailored solutions that drive your business forward.</p>
       </div>
       <div className="my-5">

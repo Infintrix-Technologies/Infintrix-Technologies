@@ -9,8 +9,9 @@ export default function CompanyInfo() {
     rootMargin: '-50px 0px', // Adjust rootMargin as needed for the trigger point
   });
   return (
-    <div>
-      <div className="bg-secondary">
+    <>
+    <div className='container mx-auto'>
+      <div className="bg-secondary my-5 rounded-2xl">
         <div className="md:flex justify-evenly">
           <div className="py-8">
             <h1 className="text-white text-6xl text-center font-sans"><div ref={ref}>
@@ -38,5 +39,6 @@ export default function CompanyInfo() {
         </div>
       </div>
     </div>
+    </>
   )
 }
